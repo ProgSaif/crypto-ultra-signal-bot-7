@@ -35,6 +35,7 @@ def generate_signal_message(coin, entry, sl, tp1, tp2, tp3, trade_type="LONG", c
 ${coin_name} — {trade_type}
 
 Entry: {entry_low:.8f} – {entry_high:.8f}
+
 SL: {sl:.8f}
 TP1: {tp1:.8f}
 TP2: {tp2:.7f}
