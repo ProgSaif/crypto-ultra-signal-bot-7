@@ -6,10 +6,10 @@ EMA_FAST = 9
 EMA_SLOW = 21
 RSI_PERIOD = 14
 PRICE_MOVE_THRESHOLD = 0.001      # 0.1% price move
-VOLUME_MULTIPLIER = 1.5           # realistic spike detection: Signal only when volume is 1.5x higher than average.
-RSI_LONG_MAX = 65                 #This catches trend earlier: RSI_LONG_MAX = 60 RSI_SHORT_MIN = 40
-RSI_SHORT_MIN = 35
-CONFIDENCE_THRESHOLD = 30         # Strong signals: CONFIDENCE_THRESHOLD = 50
+VOLUME_MULTIPLIER = 0.1           # realistic spike detection: Signal only when volume is 1.5x higher than average.
+RSI_LONG_MAX = 80                 #This catches trend earlier: RSI_LONG_MAX = 60 RSI_SHORT_MIN = 40
+RSI_SHORT_MIN = 20
+CONFIDENCE_THRESHOLD = 20         # Strong signals: CONFIDENCE_THRESHOLD = 50
 MIN_DAILY_VOLUME = 0.1            # Only coins with $5M+ daily volume: MIN_DAILY_VOLUME = 5000000
 ATR_MULTIPLIER = 3                # ✅ Good for TP/SL calculation: Many traders use 2–3
 
