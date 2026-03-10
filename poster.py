@@ -30,10 +30,3 @@ Why this setup?
 Trade here 👇${coin_name}
 """
 
-    return message
-
-
-        "BNBBEARUSDT"
-    ]
-
-    run_bot(example_symbols)
