@@ -7,7 +7,6 @@ def generate_signal_message(coin, entry, sl, tp1, tp2, tp3, trade_type="LONG", c
     entry_high = entry * 1.005
 
     message = f"""
-
 💹 ${coin_name} — {trade_type}
 
 Entry: {entry_low:.8f} – {entry_high:.8f}
@@ -29,4 +28,5 @@ Why this setup?
 
 Trade here 👇${coin_name}
 """
+    return message
 
