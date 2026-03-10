@@ -5,7 +5,7 @@ import numpy as np
 EMA_FAST = 9
 EMA_SLOW = 21
 RSI_PERIOD = 14
-PRICE_MOVE_THRESHOLD = 0.001      # 0.1% price move
+PRICE_MOVE_THRESHOLD = 0.01      # 0.1% price move
 VOLUME_MULTIPLIER = 0           # realistic spike detection
 RSI_LONG_MAX = 70
 RSI_SHORT_MIN = 30
