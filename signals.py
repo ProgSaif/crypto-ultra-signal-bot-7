@@ -5,13 +5,13 @@ import numpy as np
 EMA_FAST = 9
 EMA_SLOW = 21
 RSI_PERIOD = 14
-PRICE_MOVE_THRESHOLD = 0.1      # 0.1% price move
-VOLUME_MULTIPLIER = 0           # realistic spike detection
-RSI_LONG_MAX = 70
-RSI_SHORT_MIN = 30
-CONFIDENCE_THRESHOLD = 10
-MIN_DAILY_VOLUME = 0.1
-ATR_MULTIPLIER = 3
+PRICE_MOVE_THRESHOLD = 0.001      # 0.1% price move
+VOLUME_MULTIPLIER = 1.5           # realistic spike detection: Signal only when volume is 1.5x higher than average.
+RSI_LONG_MAX = 60                 #This catches trend earlier: RSI_LONG_MAX = 60 RSI_SHORT_MIN = 40
+RSI_SHORT_MIN = 40
+CONFIDENCE_THRESHOLD = 30         # Strong signals: CONFIDENCE_THRESHOLD = 50
+MIN_DAILY_VOLUME = 0.1            # Only coins with $5M+ daily volume: MIN_DAILY_VOLUME = 5000000
+ATR_MULTIPLIER = 3                # ✅ Good for TP/SL calculation: Many traders use 2–3
 
 # ===== HELPER FUNCTIONS =====
 def calculate_rsi(df, period=RSI_PERIOD):
