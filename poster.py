@@ -41,6 +41,13 @@ TP1: {tp1:.8f}
 TP2: {tp2:.7f}
 TP3: {tp3:.6f}
 
+Why this setup?
+• {confidence}% Confidence
+• However, {coin_name} broke out consolidation range with a strong {'bullish' if trade_type=='LONG' else 'bearish'} candle. 
+• Price reclaimed the {entry:.6f} level, showing {'buyers' if trade_type=='LONG' else 'sellers'} stepping back. 
+• If {'bulls' if trade_type=='LONG' else 'bears'} hold above {entry_low:.6f}, the next liquidity sits around {tp1:.6f}+.
+• DYOR before execute trade 
+
 Trade now 👇👇${coin_name}
 """
 
