@@ -27,6 +27,6 @@ Price reclaimed the {entry:.6f} level, showing {'buyers' if trade_type=='LONG' e
 If {'bulls' if trade_type=='LONG' else 'bears'} hold above {entry_low:.6f}, the next liquidity sits around {tp1:.6f}+.
 DYOR
 
-Trade ${coin_name} here 👇
+Trade here 👇${coin_name} 
 """
     return message
