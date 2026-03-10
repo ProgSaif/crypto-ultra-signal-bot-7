@@ -40,18 +40,7 @@ TP1: {tp1:.8f}
 TP2: {tp2:.7f}
 TP3: {tp3:.6f}
 
-— Follow for more signal —
-Like and comment Please
-
-Why this setup?
-• {confidence}% Confidence
-• Trend & volume confirmed. Trend is our friend and believe in volume that you make you millionnaire.
-• However, {coin_name} just broke out of its consolidation range with a strong {'bullish' if trade_type=='LONG' else 'bearish'} candle. 
-• Price reclaimed the {entry:.6f} level, showing {'buyers' if trade_type=='LONG' else 'sellers'} stepping back in after weeks of sideways action. 
-• If {'bulls' if trade_type=='LONG' else 'bears'} hold above {entry_low:.6f}, the next liquidity sits around {tp1:.6f}+.
-• DYOR before execute trade 
-
-Trade here 👇${coin_name}
+Trade now 👇👇${coin_name}
 """
 
     return message
@@ -61,18 +50,6 @@ Trade here 👇${coin_name}
 # Fake signal generator
 # (replace with your real logic)
 # -----------------------------
-def generate_signal(symbol):
-
-    trade_type = random.choice(["LONG", "SHORT"])
-
-    entry = random.uniform(0.01, 100)
-    sl = entry * 0.97
-    tp1 = entry * 1.02
-    tp2 = entry * 1.04
-    tp3 = entry * 1.06
-    confidence = random.randint(50, 95)
-
-    return generate_signal_message(symbol, entry, sl, tp1, tp2, tp3, trade_type, confidence)
 
 
 # -----------------------------
