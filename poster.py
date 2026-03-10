@@ -48,9 +48,10 @@ Like and comment Please
 Why this setup?
 • {confidence}% Confidence
 • Trend & volume confirmed. Trend is our friend and believe in volume that you make you millionnaire.
-However, {coin_name} just broke out of its consolidation range with a strong {'bullish' if trade_type=='LONG' else 'bearish'} candle. Price reclaimed the {entry:.6f} level, showing {'buyers' if trade_type=='LONG' else 'sellers'} stepping back in after weeks of sideways action. If {'bulls' if trade_type=='LONG' else 'bears'} hold above {entry_low:.6f}, the next liquidity sits around {tp1:.6f}+.
-
-DYOR
+• However, {coin_name} just broke out of its consolidation range with a strong {'bullish' if trade_type=='LONG' else 'bearish'} candle. 
+• Price reclaimed the {entry:.6f} level, showing {'buyers' if trade_type=='LONG' else 'sellers'} stepping back in after weeks of sideways action. 
+• If {'bulls' if trade_type=='LONG' else 'bears'} hold above {entry_low:.6f}, the next liquidity sits around {tp1:.6f}+.
+• DYOR before execute trade
 
 Trade here 👇${coin_name}
 """
