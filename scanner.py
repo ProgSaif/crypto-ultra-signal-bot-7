@@ -6,7 +6,7 @@ from signals import calculate_signal
 def get_klines(symbol, interval="5m", limit=200, retries=3):
     for i in range(retries):
         try:
-            url = f"https://api.binance.com/api/v3/klines?symbol={symbol}&interval={interval}&limit={limit}"
+            url = f"https://api.binance.us/api/v3/klines?symbol={symbol}&interval={interval}&limit={limit}"
             resp = requests.get(url, timeout=10)
             data = resp.json()
             df = pd.DataFrame(data, columns=[
