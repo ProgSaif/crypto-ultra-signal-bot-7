@@ -37,7 +37,7 @@ async def delete_after_delay(message_id, delay):
 def fetch_usdt_pairs():
     for i in range(3):
         try:
-            resp = requests.get("https://api.binance.com/api/v3/exchangeInfo", timeout=10)
+            resp = requests.get("https://api.binance.us/api/v3/exchangeInfo", timeout=10)
             data = resp.json()
             if 'symbols' not in data:
                 print("Exchange info missing 'symbols':", data)
