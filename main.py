@@ -70,8 +70,8 @@ async def run_bot():
                 print("Posting:", s['coin'], s['trade_type'])
                 await send_message_safe(msg)
                 posted.add(key)
-                await asyncio.sleep(5)
-        print("Cycle completed. 😌😌😌😌😌 Waiting  an 1hour for next scan...😌😌😌😌😌")
-        await asyncio.sleep(3600)
+                await asyncio.sleep(8)
+        print("Cycle completed. 😌😌😌😌😌 Waiting 20 minutes for next scan...😌😌😌😌😌")
+        await asyncio.sleep(1200)
 
 asyncio.run(run_bot())
