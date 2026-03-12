@@ -51,7 +51,7 @@ Why i choose this setup?
 • However, {coin_name} broke out consolidation range with a strong {'bullish' if trade_type=='LONG' else 'bearish'} candle. 
 • DYOR before execute trade. 
 
-Time to {'Long' if trade_type=='LONG' else 'Short'} 👇👇${coin_name}
+Now {'Long' if trade_type=='LONG' else 'Short'} 👇👇 ${coin_name}
 """
 
     return message
