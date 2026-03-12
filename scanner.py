@@ -3,7 +3,7 @@ import pandas as pd
 import time
 from signals import calculate_signal
 
-def get_klines(symbol, interval="5m", limit=200, retries=3):
+def get_klines(symbol, interval="1h", limit=200, retries=3):
     for i in range(retries):
         try:
             url = f"https://api.binance.us/api/v3/klines?symbol={symbol}&interval={interval}&limit={limit}"
