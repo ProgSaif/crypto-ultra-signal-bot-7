@@ -71,7 +71,7 @@ async def run_bot():
                 await send_message_safe(msg)
                 posted.add(key)
                 await asyncio.sleep(5)
-        print("Cycle completed. 😌😌😌😌😌 Waiting 10 minutes for next scan...😌😌😌😌😌")
-        await asyncio.sleep(3600)
+        print("Cycle completed. 😌😌😌😌😌 Waiting 30 sec for next scan...😌😌😌😌😌")
+        await asyncio.sleep(30)
 
 asyncio.run(run_bot())
