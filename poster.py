@@ -99,7 +99,8 @@ if __name__ == "__main__":
         "BTCUPUSDT",
         "BTCDOWNUSDT",
         "BNBBULLUSDT",
-        "BNBBEARUSDT"
+        "BNBBEARUSDT",
+        "FLOKI8USDT", 
     ]
 
     run_bot(example_symbols)
